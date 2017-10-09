@@ -8,6 +8,9 @@
 				margin:0;
 				padding:0;
 			}
+			a{
+				text-decoration:none;
+			}
 			.top{
 				width:100%;
 				height:70px;
@@ -54,6 +57,56 @@
 				background: #fff;
 				float:left;
 			}
+			.tittle{
+				width: 400px;
+				height:30px;
+				line-height: 30px;
+				border-bottom:2px solid #b81e20;
+				margin-left:50px;
+			}
+			.tittle span{
+				float: right;
+				text-decoration: none;
+				margin-right: 10px;
+				color:#666;
+			}
+			.tittle a{
+				float:right;
+				font-size: 18px;
+				color:#b81e20;
+
+			}
+			.input{
+				width:400px;
+				margin-left:50px;
+				margin-top: 100px;
+				margin-bottom: 50px;
+			}
+			.input input{
+				height:30px;
+				width:250px;
+				margin-bottom: 10px;
+			}
+
+			.input span{
+				display: block;
+				float: right;
+				width:80px;
+				height:30px;
+				border:1px solid #333;
+				text-align: center;
+				line-height: 30px;
+			}
+			.input p{
+				width: 400px;
+				height:35px;
+				border:1px solid #666;
+				border-radius: 5px;
+				text-align: center;
+				line-height:35px;
+				margin-top:20px;
+				background: #b81e20;
+			}
 			.login-right{
 				width:300px;
 				height:100%;
@@ -87,14 +140,14 @@
 				box-shadow: 1px 1px 2px #eee;
 				margin-bottom: 20px;
 			}
-			.login-1 span{
+			.login-1 a{
 				width:150px;
 				float:right;
 				font-size:16px;
 				border-right:10px;
 				margin-bottom: 8px;
 			}
-			.login-1 a{
+			.login-1 span{
 				color:darkred;
 				font-size:18px;
 
@@ -327,39 +380,24 @@
 		<div class="login">
 			<div class="login-left">
 				<div class="imgs1">
-					<img src="img/45.jpg"/>
+					<img src="img/33.jpg"/>
 				</div>
 				<p>七七格互联网品牌</p>	
 			</div>
 			<div class="login-center">
-				<div class="login-1">
-					七七格登录<span>没有账户   免费   <a href="register.html">注册</a></span>
+				<p class="tittle">注册新用户<a href="login.html">登录</a><span>已注册请</span></p>
+				<div class="input">
+					<input type="text" placeholder="验证码"/>
+					<span id="checkMa">验证码</span><br/>
+					<input type="text" placeholder="请输入手机号"/>
+					<span >验证码</span><br/>
+					<input type="text" placeholder="验证填入手机验证码"/><br/>
+					<input type="text" placeholder="设定登录密码"/><br/>
+					<input type="text" placeholder="再次输入密码"/><br/>
+
+					<p>立即注册</p>
 				</div>
-				<div class="click1">
-					<input type="button" value="普通登录"/>
-					<input type="button" value="快速登录"/>
-				</div>
-				<div class="login-2">
-					<input type="text" placeholder="请输入用户名"/><br/>
-					<input type="password" placeholder="请输入密码"/> 
-					<div class="login-3">
-						<a href="">找回密码</a>
-						<input type="submit" value="登录"/> 
-					</div>
-					<div class="about1">
-						<p>使用合作网站账号登录七七</p>
-						<P>
-							<a href=""><img src="img/88.jpg"></a>
-							<a href=""><img src="img/89.jpg"></a>
-							<a href=""><img src="img/90.jpg"></a>
-							<a href=""><img src="img/91.jpg"></a>
-							<a href=""><img src="img/92.jpg"></a>
-							<a href=""><img src="img/93.jpg"></a>
-						</P>
-					</div>	
-				</div>
-				
-			</div>
+ 			</div>
 			<div class="login-right">
 				<a href="index.html">返回首页>></a>
 				<div class="show">
@@ -417,4 +455,19 @@
 		});
 	})
 	
+
+	function show(){
+		var str="";
+		for(var i=0;i<3;i++){
+			var str1=parseInt(Math.random()*256);
+			if(str1<16){
+				str+="0";
+			}
+			str+=str1.toString(16);
+		}
+		document.getElementById("checkMa").innerHTML=str;
+	}
+	window.onload=function(){
+		show();
+	}
 </script>

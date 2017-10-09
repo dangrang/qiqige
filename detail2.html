@@ -1,0 +1,141 @@
+<!DOCTYPE html>                                                                               
+<html lang="en">                                                                              
+<head>                                                                                        
+<meta charset="UTF-8">                                                                        
+<title>detail1</title>                                                                        
+<link rel="stylesheet" type="text/css" href="css/detail.css"/>                                
+</head>                                                                                       
+<body>                                                                                        
+	<!-- section -->                                                                          
+	<div class="nav">                                                                         
+		<div class="nav-text">                                                                
+			<a href="">首页<img src="img/96.jpg" alt="" /></a>                                  
+			<a href="">女装<img src="img/96.jpg" alt="" /></a>                                  
+			<a href="">针织衫<img src="img/96.jpg" alt="" /></a>                                 
+			<a href="">上衣<img src="img/96.jpg" alt="" /></a>                                  
+			<a href="">七七格服饰</a>                                                              
+		</div>                                                                                
+	</div>                                                                                    
+	<div class="section-1">                                                                   
+		<div class="section-1-left">                                                          
+			七七格休闲服饰 针织外套 白色                                                                   
+		</div>                                                                                
+		<div class="section-1-right">                                                         
+			<a href="">购买指南</a>                                                               
+			<a href="">模特搭配</a>                                                               
+			<a href="">设计细节</a>                                                               
+			<a href="">洗涤保养</a>                                                               
+			<a href="">评论</a>                                                                 
+			<a href="">提问</a>                                                                 
+		</div>                                                                                
+	</div>                                                                                    
+	<div class="section-two">                                                                 
+		<div class="section-two-left">                                                        
+			<div class="pic">                                                                 
+				<img src="img/43.jpg"/>                                                       
+			</div>                                                                            
+			<div class="pic">                                                                 
+				<img src="img/42.jpg"/>                                                       
+			</div>                                                                            
+			<div class="pic">                                                                 
+				<img src="img/41.jpg"/>                                                       
+			</div>                                                                            
+		</div>                                                                                
+		<div class="section-two-center">                                                      
+			<div class="mrrior">                                                              
+	                                                                         
+			</div>                                                                            
+		</div>                                                                                
+		<div class="section-two-right">
+			<div class="section-2">
+				<p>特惠价：￥<span>158.00</span>充100返100   点击充值</p> 
+			</div>
+			<div class="section-3">
+				<p>颜色：</p>
+				<p><img src="img/44.jpg" alt="" /><a href="">卡其色</a></p>
+				<p><img src="img/43.jpg" alt="" /><a href="">白色</a></p>
+				<p><img src="img/42.jpg" alt="" /><a href="">黑色</a></p>
+				<p><img src="img/41.jpg" alt="" /><a href="">军绿色</a></p>
+			</div>                                  
+	        <div class="section-4">
+	        	<div class="size">
+	        		<span>	尺码：</span>
+	        		<a href="">XS</a>
+	        		<a href="">S</a>
+	        		<a href="">M</a>
+	        		<a href="">L</a>
+	        		<a href="">XL</a>
+	        		<a href="">XXL</a>
+	        	</div>
+			</div> 
+			
+			<div class="section-5">
+				<span>数量：</span>
+				<select name="">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+					<option value="">4</option>
+					<option value="">5</option>
+					<option value="">6</option>
+					<option value="">7</option>
+					<option value="">8</option>
+					<option value="">9</option>
+					<option value="">10</option>
+				</select>
+				<span>余量有限</span>
+			</div>
+			
+			<div class="section-6">
+				<span>已选：</span>
+				<span>M</span>
+				<span>黑色</span>
+				<span>库存紧张</span>
+			</div>
+			
+			<div class="section-7">
+				<a href="">立即购买</a>
+				<a href=""><img src="img/97.jpg"/>加入购物车</a>
+			</div>
+			
+			<div class="section-8">
+				<div class="center-line"></div>
+				<a href="">优惠提示</a>
+				<div class="center-line"></div>
+			</div>
+			<div class="section-9">
+				
+			</div>
+		</div>                                                                                
+	</div>                                                                                    
+</body>                                                                                       
+</html> 
+<script type="text/javascript" src="js/tools.js" ></script>
+<script type="text/javascript" src="js/eventTools.js" ></script>
+<script type="text/javascript" src="js/BigMirrorSingleton.js" ></script>
+<script type="text/javascript">
+window.onload = function(){
+	
+	$(".mrrior").onmouseover = function(){
+		singleton.getInstance({
+					//容器的dom对象
+					boxDom : $(".mrrior"),
+					//放大镜的尺寸（宽和高）
+					width : 50,
+					height : 50,
+					//放大的倍数
+					mult : 3,
+					//透明度
+					opacity : 0.3,
+					//背景色
+					bgColor : "pink",					
+					//放大效果
+					bigObj : {
+						//位置
+						pos:"右",
+						pic:"img/1.jpg"
+					}
+		});
+	}
+}
+</script>

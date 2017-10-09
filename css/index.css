@@ -899,132 +899,47 @@
 	float: right;
 	margin-left:15px;
 }
-/*.foot1{
-	width: 1198px;
-	height:285px;
-	margin:0 auto;
-	margin-top: 50px;
-	box-shadow: 2px 2px 3px #f8f8f8;
-}
-.foot1-1{
-	width: 1120px;
-	height:140px;
-	margin:0 auto;
-	margin-top: 35px;
+.float{
+	width: 80px;
+	height:240px;
+	background: #eee;
 	display: flex;
-	justify-content: space-between;
+	flex-direction:column;
+	position: fixed;
+	bottom:0;
+	right:0;
+	border:2px solid #b81b22;
+}
+.float-top img{
+	width:22px;
+	height:40px;
+	margin-top:10px;
 }
 
-.foot1-2-1{
-	width: 33%;
-	height:100%;
-	text-align: center;
-	border-right: 2px solid #eee;
-}
-.foot1-2-1 a{
-	display: block;
-
-}
-.foot1-2-1 a:first-child{
-	margin:15px 0 32px 0;
-
-}
-.foot1-2-1 a:last-child{
-	width: 156px;
-	height:32px;
-	color:#fff;
-	background:#b81b22;
-	line-height: 32px;
-	margin:0 auto;
-}
-.foot1-2-2{
-	width: 33%;
-	height:100%;
-	text-align: center;
-	border-right: 2px solid #eee;
-}
-.foot1-2-2 a{
-	display: block;
-	color:#6e6f6a;
-	font-size: 12px;
-	line-height: 26px;
-
-}
-.foot1-2-2 a:first-child{
-	margin:15px 0 32px 0;
-
-}
-.foot1-2-3{
-	width: 33%;
-	height:100%;
+.float-top{
+	height:80px;
+	background: #eee;
+	border-bottom:2px solid #b81b22;
 	text-align: center;
 }
-.foot1-2-3 a{
-	display: block;
-
+.float-center{
+	height:80px;
+	background: #eee;
+	border-bottom:2px solid #b81b22;
+	text-align: center;
 }
-.foot1-2-3 a:first-child{
-	
-
-}
-.foot1-2-3 img{
-	width: 100px;
-	height:100px;
-}
-.foot1-2-3 a:last-child{
-	width: 160px;
-	height:32px;
-	color:#6e6f6a;
-	line-height: 32px;
-	margin:0 auto;
-}
-.foot2{
-	width: 1120px;
-	height:55px;
-	background:#f8f8f8;
-	margin:0 auto;
-	margin-top: 20px;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 25px;
-}
-.foot2 a{
-	float: left;
+.float-center img{
+	width:30px;
 	height:30px;
-	width: 17%;
+	margin-top:10px;
+}
+.float-bottom{
+	height:80px;
 	text-align: center;
-	line-height: 30px;
-	color:#413040;
-	margin-top: 13px;
-	border-right: 1px solid #dbdbdb;
-	font-size: 12px;
+	line-height: 80px;
+	color:#000;
 }
-.foot2 a:last-child{
-	border-right:none;
+.float-bottom:hover{
+	background: #b81b22;
+	color:#fff;
 }
-.p1{
-	text-align: center;
-	line-height: 42px;
-	font-size: 12px;
-	color:#36303c;
-}
-.p2{
-	text-align: center;
-	font-size: 12px;
-	color:#36303c;
-}
-.about{
-	width: 1200px;
-	height:50px;
-	margin:0 auto;
-	margin-top:30px;
-	margin-bottom:20px;
-	text-align: center;
-}
-.about a{
-	margin-right:20px;
-}
-.about a:last-child img{
-	width: 110px;
-	height:50px;
-}*/

@@ -234,6 +234,7 @@ a{
 	height:78px;
 	margin:5px auto;
 	font-size: 12px;
+	z-index: 999;
 }
 .box4 img{
 	float:left;
@@ -245,51 +246,41 @@ a{
 	float:left;
 	list-style: none;
 }
-.box4-1 a{
-	float: left;
-	margin-top: 31px;
-	width: 99px;
-	border-right:1px solid #75757d;
-	color:#75757d;
-	text-align: center;
-}
-.box4-1 a:nth-child(2){
-	position: relative;
-}
-.menu1{
-	position: absolute;
+.bananer{
+		float: left;
+		z-index:999;
+		
+	}
+.panel{
 	width: 100px;
-	top:50px;
-	left:0px;
-	background:#fff;
-	opacity: 0;
+	height:78px;
+	text-align: center;
+	line-height:78px;
+	position:relative;
+	background:url(../img/right.jpg) no-repeat right;
 }
+.panel img{
+	width:24px;
+	height:12px;
+	position:absolute;
+	top:15px;
+	left:65px;
+	color:#75757d;
+}
+.flip{
+	display: none;
+	width: 100px;
+	height:320px;
+	background:orange;
+	text-align: center;
+	border-top:2px solid #b61a25;
+	
 
-.box4-1 a:nth-child(2):hover div{
-	opacity: 0.8;
-	transition: all 2s;
 }
-.menu1 p{
-	border-right: none;
-	line-height: 30px;
-}
-.menu1 p:first-child{
-	border-top:3px solid #b81b22;
-}
-.box4-1 a:nth-child(3){
-	position: relative;
-}
-.box4-1 a img:nth-child(1){
-	width: 25px;
-	height:13px;
-	position: absolute;
-	top:-10px;
-}
-.box4-1 a img:nth-child(2){
-	width: 25px;
-	height:13px;
-	position: absolute;
-	top:-10px;
+.flip a{
+	display:block;
+	height:30px;
+	
 }
 .line2{
 	width: 100%;
