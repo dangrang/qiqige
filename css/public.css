@@ -91,13 +91,13 @@ a{
 	height:510px;
 	background:#000;
 	position: absolute;
-	top:30px;
+	top:25px;
 	left:0px;
 	box-shadow: -2px -2px 5px #f4e4c9;
 	z-index: 999;
 	border-radius: 5px;
 	opacity: 0.6;
-	display: none;
+	/*display: none;*/
 	transition: all 1s;
 }
 .top-left{
@@ -120,7 +120,7 @@ a{
 .menu1-1:first-child{
 	margin-top: 20px;
 }
-.box1-1 .menu1-1 a{
+.menu1-1 a{
 	float:left;
 	color:#fff;
 	line-height: 40px;
@@ -419,3 +419,49 @@ a{
 	width: 110px;
 	height:50px;
 }
+.float{
+	width: 60px;
+	height:180px;
+	background: #eee;
+	display: flex;
+	flex-direction:column;
+	position: fixed;
+	bottom:0;
+	right:0;
+	border:2px solid #b81b22;
+	font-size:12px;
+}
+.float-top img{
+	width:22px;
+	height:30px;
+	margin-top:10px;
+}
+
+.float-top{
+	height:60px;
+	background: #eee;
+	border-bottom:2px solid #b81b22;
+	text-align: center;
+}
+.float-center{
+	height:60px;
+	background: #eee;
+	border-bottom:2px solid #b81b22;
+	text-align: center;
+}
+.float-center img{
+	width:30px;
+	height:30px;
+	margin-top:10px;
+}
+.float-bottom{
+	height:60px;
+	text-align: center;
+	line-height: 60px;
+	color:#000;
+}
+.float-bottom:hover{
+	background: #b81b22;
+	color:#fff;
+}
+

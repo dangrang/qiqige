@@ -1,133 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style type="text/css"> 
-/*div.panel,p.flip
-	{
-		margin:0px;
-		padding:5px;
-		text-align:center;
-		background:#e5eecc;
-		border:solid 1px #c3c3c3;
-	}
+	<meta charset="UTF-8">
+	<title>div</title>
+	<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			.box{
+				width: 1px;
+				height:1px;
+				border:100px solid #eee;
+				border-top-color: transparent;
 
-div.panel
-	{
-		height:120px;
-		display:none;
-	}*/
-	.bananer{
-		float: left;
-		margin-right: 20px;
-	}
-	.panel{
-		width: 100px;
-		height:50px;
-		background: red;
-	}
-	.flip{
-		display: none;
-	}
-</style>
+			}
+
+	</style>
 </head>
- 
 <body>
- 
-<!-- <div class="panel">
-	<p>W3School - 领先的 Web 技术教程站点</p>
-	<p>在 W3School，你可以找到你所需要的所有网站建设教程。</p>
-</div>
- 
-	<p class="flip">请点击这里</p> -->
- 
-	<div class="bananer">
-		<div class="panel">
-			<a href="">衬衫<img src="img/8.jpg"/></a>
-		</div>
-		<div class="flip">
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-		</div>
-	</div>
-	<div class="bananer">
-		<div class="panel">
-			<a href="">衬衫<img src="img/8.jpg"/></a>
-		</div>
-		<div class="flip">
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-		</div>
-	</div>
-	<div class="bananer">
-		<div class="panel">
-			<a href="">衬衫<img src="img/8.jpg"/></a>
-		</div>
-		<div class="flip">
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-		</div>
-	</div>
-	<div class="bananer">
-		<div class="panel">
-			<a href="">衬衫<img src="img/8.jpg"/></a>
-		</div>
-		<div class="flip">
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-			<p>定制</p>
-			<p>免烫</p>
-			<p>高支</p>
-		</div>
-	</div>
-								
+	<div class="box"></div>
 </body>
 </html>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
-<script type="text/javascript"> 
-	$(document).ready(function(){
-		$(".panel").mouseover(function(){
-		    $(".flip").slideDown("300");
-		});
-		$(".panel").mouseout(function(){
-		    $(".flip").slideUp("300");
-		});
-	});
-</script>
- 

@@ -1,14 +1,73 @@
-<!DOCTYPE html>                                                                               
-<html lang="en">                                                                              
-<head>                                                                                        
-<meta charset="UTF-8">                                                                        
-<title>detail2</title>
-<link rel="stylesheet" type="text/css" href="css/public.css"/>
-<link rel="stylesheet" type="text/css" href="css/detail.css"/>                                
-</head>                                                                                       
-<body> 
-	<!--header-->
-		<div class="top">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<style type="text/css">
+html,body,p,ul,li,ol,div,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6,img,input{
+		margin:0;
+		padding:0;
+		font-family:"微软雅黑",Arial;
+	}
+
+a{
+		text-decoration:none;
+	}
+	.section-1{
+		width:1200px;
+		height:130px;
+		margin:0 auto;
+	}
+	.section-1-line{
+		width:200px;
+		height:3px;
+		background: #b4201e;
+		margin-left:100px;
+		margin-top:70px;
+		float:left;
+	}
+	.section-1-center{
+		width:380px;
+		height:40px;
+		font-size:24px;
+		font-weight:600;
+		background: #fff;
+		line-height:40px;
+		text-align: center;
+		float:left;
+		margin-top:50px;
+		margin-left:85px;
+	}
+	.section-2{
+		width:700px;
+		height:380px;
+		margin:20px auto;
+		font-size: 14px;
+		color:#161415;
+	}
+	.section-2 p{
+		line-height: 30px;
+	}
+	.section-2 p:first-child{
+		margin-bottom: 14px;
+	}
+	.section-2 p:nth-child(5){
+		margin-left: 450px;
+		margin-top: 65px;
+	}
+	.section-2 p:nth-child(6){
+		margin-left: 573px;
+	}
+	.section-2 p:nth-child(7){
+		margin-left: 480px;
+		margin-top:30px;
+	}
+</style>
+</head>
+	<body>
+	<!-- header -->
+	<div class="top">
 		<div class="top-center">
 			<div class="top-left">
 				<div class="box1-1">
@@ -116,10 +175,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="box1-1"><a href="">登录</a></div>
-			<div class="box1-1"><a href="">注册</a></div>
-			<div class="box1-1"><a href="">我的订单</a></div>
-			<div class="box1-1"><a href="">网站公告</a></div>
+			<div class="box1-1"><a href="login.html"class="login" onclick="show()">登录</a></div>
+			<div class="box1-1"><a href="register.html">注册</a></div>
+			<div class="box1-1"><a href="detail3.html">我的订单</a></div>
+			<div class="box1-1"><a href="notice.html">网站公告</a></div>
 			<div class="box1-1">
 				<img src="img/10.jpg">
 			</div>
@@ -129,7 +188,7 @@
 			<div class="line1"></div>
 		</div>
 	</div>
-	<div class="box1"></div>
+	<div class="box1"></div>	
 <!-- input -->
 	<div class="box2">
 		<div class="box2-1">
@@ -327,112 +386,26 @@
 	</div>
 	<div class="line2"></div>
 
-	
-	<!-- section -->                                                                          
-	<div class="nav">                                                                         
-		<div class="nav-text">                                                                
-			<a href="">首页<img src="img/96.jpg" alt="" /></a>                                  
-			<a href="">女装<img src="img/96.jpg" alt="" /></a>                                  
-			<a href="">针织衫<img src="img/96.jpg" alt="" /></a>                                 
-			<a href="">上衣<img src="img/96.jpg" alt="" /></a>                                  
-			<a href="">七七格服饰</a>                                                              
-		</div>                                                                                
-	</div>                                                                                    
-	<div class="section-1">                                                                   
-		<div class="section-1-left">                                                          
-			七七格休闲服饰 针织外套 白色                                                                   
-		</div>                                                                                
-		<div class="section-1-right">                                                         
-			<a href="">购买指南</a>                                                               
-			<a href="">模特搭配</a>                                                               
-			<a href="">设计细节</a>                                                               
-			<a href="">洗涤保养</a>                                                               
-			<a href="">评论</a>                                                                 
-			<a href="">提问</a>                                                                 
-		</div>                                                                                
-	</div>                                                                                    
-	<div class="section-two">                                                                 
-		<div class="section-two-left">                                                        
-			<div class="pic">                                                                 
-				<img src="img/43.jpg"/>                                                       
-			</div>                                                                            
-			<div class="pic">                                                                 
-				<img src="img/42.jpg"/>                                                       
-			</div>                                                                            
-			<div class="pic">                                                                 
-				<img src="img/41.jpg"/>                                                       
-			</div>                                                                            
-		</div>                                                                                
-		<div class="section-two-center">                                                      
-			<div id="mrrior">                                                              
-	                                                                         
-			</div>                                                                            
-		</div>                                                                                
-		<div class="section-two-right">
-			<div class="section-2">
-				<p>特惠价：￥<span>158.00</span>充100返100   点击充值</p> 
+		<!--section-->
+		<div class="section-1">
+			<div class="section-1-line"></div>
+			<div class="section-1-center">
+				QIQIGE客服中心重要提示
 			</div>
-			<div class="section-3">
-				<p>颜色：</p>
-				<p><img src="img/44.jpg" alt="" /><a href="">卡其色</a></p>
-				<p><img src="img/43.jpg" alt="" /><a href="">白色</a></p>
-				<p><img src="img/42.jpg" alt="" /><a href="">黑色</a></p>
-				<p><img src="img/41.jpg" alt="" /><a href="">军绿色</a></p>
-			</div>                                  
-	        <div class="section-4">
-	        	<div class="size">
-	        		<span>	尺码：</span>
-	        		<a href="">XS</a>
-	        		<a href="">S</a>
-	        		<a href="">M</a>
-	        		<a href="">L</a>
-	        		<a href="">XL</a>
-	        		<a href="">XXL</a>
-	        	</div>
-			</div> 
-			
-			<div class="section-5">
-				<span>数量：</span>
-				<select name="">
-					<option value="">1</option>
-					<option value="">2</option>
-					<option value="">3</option>
-					<option value="">4</option>
-					<option value="">5</option>
-					<option value="">6</option>
-					<option value="">7</option>
-					<option value="">8</option>
-					<option value="">9</option>
-					<option value="">10</option>
-				</select>
-				<span>余量有限</span>
-			</div>
-			
-			<div class="section-6">
-				<span>已选：</span>
-				<span>M</span>
-				<span>黑色</span>
-				<span>库存紧张</span>
-			</div>
-			
-			<div class="section-7">
-				<a href="">立即购买</a>
-				<a href=""><img src="img/97.jpg"/>加入购物车</a>
-			</div>
-			
-			<div class="section-8">
-				<div class="center-line"></div>
-				<a href="">优惠提示</a>
-				<div class="center-line"></div>
-			</div>
-			<div class="section-9">
-				
-			</div>
-		</div>                                                                                
-	</div> 
-	
-	<!-- footer -->
-		<div class="foot1">
+			<div class="section-1-line"></div>
+		</div>
+		<div class="section-2">
+			<p>尊敬的七七格客户：</p>
+			<p>1、因受厦门会议的影响：厦门地区的订单由8月18日--9月6日会议期间无法配送；</p>
+			<p>2、由于天津近期举办全运会，届时会对配送产生影响，影响时间为8月25日-9月10日，部分地址的订单将无法配送；</p>
+			<p>以上给您带来不便，请您谅解，再次感谢您对QIQIGE一如既往地支持和理解！</p>
+			<p>七七格科技有限公司&nbsp;&nbsp;&nbsp;客服服务中心</p>
+			<p>2017年8月24日</p>
+			<p><img src="img/6-1.jpg"/></p>
+		</div>
+		
+<!-- footer -->
+	<div class="foot1">
 		<div class="foot1-1">
 			<div class="foot1-2-1">
 				<a href=""><img src="img/72.png"/></a>
@@ -469,40 +442,5 @@
 		<a href=""><img src="img/78.jpg" alt=""/></a>
 		<a href=""><img src="img/79.png" alt=""/></a>
 	</div>
-</body>                                                                                       
+	</body>
 </html>
-<!--<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>--> 
-<script type="text/javascript" src="js/tools.js" ></script>
-<script type="text/javascript" src="js/eventTools.js" ></script>
-<script type="text/javascript" src="js/BigMirrorSingleton.js" ></script>
-
-<script type="text/javascript">
-window.onload = function(){
-	
-	$("#mrrior").onmouseover = function(){
-		singleton.getInstance({
-					//容器的dom对象
-					boxDom : $("#mrrior"),
-					//放大镜的尺寸（宽和高）
-					width : 150,
-					height : 150,
-					//放大的倍数
-					mult : 2,
-					//透明度
-					opacity : 0.3,
-					//背景色
-					bgColor : "pink",					
-					//放大效果
-					bigObj : {
-						//位置
-						pos:"右",
-						pic:"img/43.jpg"
-					}
-		});
-	}
-	
-	$(".panel").click(function(){
-	    $(".flip").slideToggle("300");
-	});	
-}
-</script>

@@ -900,8 +900,8 @@
 	margin-left:15px;
 }
 .float{
-	width: 80px;
-	height:240px;
+	width: 60px;
+	height:180px;
 	background: #eee;
 	display: flex;
 	flex-direction:column;
@@ -909,21 +909,22 @@
 	bottom:0;
 	right:0;
 	border:2px solid #b81b22;
+	font-size:12px;
 }
 .float-top img{
 	width:22px;
-	height:40px;
+	height:30px;
 	margin-top:10px;
 }
 
 .float-top{
-	height:80px;
+	height:60px;
 	background: #eee;
 	border-bottom:2px solid #b81b22;
 	text-align: center;
 }
 .float-center{
-	height:80px;
+	height:60px;
 	background: #eee;
 	border-bottom:2px solid #b81b22;
 	text-align: center;
@@ -934,9 +935,9 @@
 	margin-top:10px;
 }
 .float-bottom{
-	height:80px;
+	height:60px;
 	text-align: center;
-	line-height: 80px;
+	line-height: 60px;
 	color:#000;
 }
 .float-bottom:hover{

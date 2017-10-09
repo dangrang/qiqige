@@ -14,7 +14,7 @@
 				<div class="box1-1">
 					<div class="box1-menu">
 						<div class="menu1-1">
-							<a href="">衬衣</a>
+							<a href="login.html">衬衣</a>
 							<a href="">衬衣</a>
 							<a href="">衬衣</a>
 							<a href="">衬衣</a>
@@ -118,8 +118,8 @@
 			</div>
 			<div class="box1-1"><a href="login.html"class="login" onclick="show()">登录</a></div>
 			<div class="box1-1"><a href="register.html">注册</a></div>
-			<div class="box1-1"><a href="">我的订单</a></div>
-			<div class="box1-1"><a href="">网站公告</a></div>
+			<div class="box1-1"><a href="detail3.html">我的订单</a></div>
+			<div class="box1-1"><a href="notice.html">网站公告</a></div>
 			<div class="box1-1">
 				<img src="img/10.jpg">
 			</div>
@@ -918,6 +918,7 @@
 <script type="text/javascript" src="js/SliderPlugInjQuery.js" ></script>
 <script type="text/javascript">
 $(function(){
+	//轮播图
 	$(".nav").Slider({
 					"width" : 1200,
 					"height" :500,		
@@ -933,11 +934,15 @@ $(function(){
 						"isCircle": true
 					}
 			});
-	
+	//导航栏
 	$(".panel").click(function(){
 	    $(".flip").slideToggle("300");
-	});		
-	
+	});	
+	//顶部悬浮
+	 $(".float-bottom").click(function () {
+        $('body,html').animate({ scrollTop: 0 },500);
+        return false;
+    });
 });
 
 </script>
