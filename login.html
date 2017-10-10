@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>登录</title>
 		<style type="text/css">
 			*{
 				margin:0;
@@ -340,8 +340,8 @@
 					<input type="button" value="快速登录"/>
 				</div>
 				<div class="login-2">
-					<input type="text" placeholder="请输入用户名"/><br/>
-					<input type="password" placeholder="请输入密码"/> 
+					<input type="text" placeholder="请输入用户名" id="userName"/>&nbsp;<span id="name"></span><br/>
+					<input type="password" placeholder="请输入密码" id="userPass"/>&nbsp;<span id="pass"></span> 
 					<div class="login-3">
 						<a href="">找回密码</a>
 						<input type="submit" value="登录"/> 
@@ -415,5 +415,33 @@
 		$(".house").click(function(){
 			$(".bgpic")[0].style="background:url(img/star.gif)no-repeat;background-position:0px -27px;transition:all 0.5s;";
 		});
-	})
+	
+	$("#userName").blur(function(){
+		var result=$("#userName")[0].value;
+	// 写正则
+		var reg=/^1\d{10}/;
+	// 判断是否正确
+		if(reg.test(result)){
+			$("#name")[0].innerHTML="";
+			$("#name")[0].style.color="#000";
+		}else{
+			$("#name")[0].innerHTML="*";
+			$("#name")[0].style.color="red";
+		}
+	});
+	
+	$("#userPass").blur(function(){
+		var result=$("#userPass")[0].value;
+	// 写正则
+		var reg=/^1\d{10}/;
+	// 判断是否正确
+		if(reg.test(result)){
+			$("#pass")[0].innerHTML="";
+			$("#pass")[0].style.color="#000";
+		}else{
+			$("#pass")[0].innerHTML="*";
+			$("#pass")[0].style.color="red";
+		}
+	});
+})
 </script>

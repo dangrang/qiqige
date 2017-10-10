@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>注册</title>
 		<style type="text/css">
 			*{
 				margin:0;
@@ -87,7 +87,17 @@
 				width:250px;
 				margin-bottom: 10px;
 			}
-
+			.input input:last-child{
+				margin-top:50px;
+				margin-left:70px;
+				width:300px;
+				height:30px;
+				border-radius: 5px;
+				line-height: 30px;
+				color:#b81e20;
+				font-size:16px;
+				font-weight: 600;
+			}
 			.input span{
 				display: block;
 				float: right;
@@ -387,15 +397,16 @@
 			<div class="login-center">
 				<p class="tittle">注册新用户<a href="login.html">登录</a><span>已注册请</span></p>
 				<div class="input">
-					<input type="text" placeholder="验证码"/>
-					<span id="checkMa">验证码</span><br/>
-					<input type="text" placeholder="请输入手机号"/>
-					<span >验证码</span><br/>
-					<input type="text" placeholder="验证填入手机验证码"/><br/>
-					<input type="text" placeholder="设定登录密码"/><br/>
-					<input type="text" placeholder="再次输入密码"/><br/>
-
-					<p>立即注册</p>
+					<form method="post"action="register.php">
+						<input type="text" placeholder="验证码" id="checkMa"/><a href=""id="name"></a>
+						<span id="checkma">&lt;&lt;点击</span><br/>
+						<input type="text" name="phone"placeholder="请输入手机号" id="phone"/><a href=""id="phone1"></a>
+						<!--<span >验证码</span><br/>-->
+						<input type="text" placeholder="真实姓名" name="userName"/><br/>
+						<input type="password"name="userPass" placeholder="设定登录密码" id="userPass"/><a href=""id="userPass1"></a><br/>
+						<input type="password" placeholder="再次输入密码" id="checkPass"/><a href=""id="checkPass1"></a><br/>
+						<input type="submit"value="立即注册"/>
+					</form>
 				</div>
  			</div>
 			<div class="login-right">
@@ -453,6 +464,64 @@
 		$(".house").click(function(){
 			$(".bgpic")[0].style="background:url(img/star.gif)no-repeat;background-position:0px -27px;transition:all 0.5s;";
 		});
+		//页面打开的验证码
+		$("#checkMa").blur(function(){
+			var result=$("#checkMa")[0].value;
+		// 写正则
+			var checkma=$("#checkma")[0].innerHTML;
+		// 判断是否正确
+			if(result==checkma){
+				$("#name")[0].innerHTML="";
+				$("#name")[0].style.color="#000";
+			}else{
+				$("#name")[0].innerHTML="*";
+				$("#name")[0].style.color="red";
+			}
+		});
+		//手机号的验证
+		$("#phone").blur(function(){
+			var result=$("#phone")[0].value;
+		// 写正则
+			var reg=/^1\d{10}/;
+		// 判断是否正确
+			if(reg.test(result)){
+				$("#phone1")[0].innerHTML="";
+				$("#phone1")[0].style.color="#000";
+			}else{
+				$("#phone1")[0].innerHTML="*";
+				$("#phone1")[0].style.color="red";
+			}
+		});
+		//手机号码的
+		//密码设置
+		$("#userPass").blur(function(){
+			var result=$("#userPass")[0].value;
+		// 写正则
+			var reg=/^1\d{10}/;
+		// 判断是否正确
+			if(reg.test(result)){
+				$("#userPass1")[0].innerHTML="";
+				$("#userPass1")[0].style.color="#000";
+			}else{
+				$("#userPass1")[0].innerHTML="*";
+				$("#userPass1")[0].style.color="red";
+			}
+		});
+		
+		//再次输入密码
+		$("#checkPass").blur(function(){
+			var result=$("#checkPass")[0].value;
+		// 写正则
+			var checkma=$("#userPass")[0].innerHTML;
+		// 判断是否正确
+			if(result==checkma){
+				$("#checkPass1")[0].innerHTML="";
+				$("#checkPass1")[0].style.color="#000";
+			}else{
+				$("#checkPass1")[0].innerHTML="*";
+				$("#checkPass1")[0].style.color="red";
+			}
+		});
 	})
 	
 
@@ -465,9 +534,9 @@
 			}
 			str+=str1.toString(16);
 		}
-		document.getElementById("checkMa").innerHTML=str;
+		document.getElementById("checkma").innerHTML=str;
 	}
-	window.onload=function(){
+	document.getElementById("checkMa").onclick=function(){
 		show();
 	}
 </script>
