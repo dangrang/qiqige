@@ -2,14 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>注册</title>
+		<title>登录</title>
 		<style type="text/css">
 			*{
 				margin:0;
 				padding:0;
-			}
-			a{
-				text-decoration:none;
 			}
 			.top{
 				width:100%;
@@ -57,77 +54,6 @@
 				background: #fff;
 				float:left;
 			}
-			.tittle{
-				width: 400px;
-				height:30px;
-				line-height: 30px;
-				border-bottom:2px solid #b81e20;
-				margin-left:50px;
-			}
-			.tittle span{
-				float: right;
-				text-decoration: none;
-				margin-right: 10px;
-				color:#666;
-			}
-			.tittle a{
-				float:right;
-				font-size: 18px;
-				color:#b81e20;
-
-			}
-			.input{
-				width:400px;
-				margin-left:50px;
-				margin-top: 100px;
-				margin-bottom: 50px;
-				/*text-align: center;*/
-			}
-			.input input{
-				height:30px;
-				width:250px;
-				margin-bottom: 10px;
-			}
-			.input input:last-child{
-				margin-top:50px;
-				margin-left:70px;
-				width:300px;
-				height:30px;
-				border-radius: 5px;
-				line-height: 30px;
-				color:#b81e20;
-				font-size:16px;
-				font-weight: 600;
-			}
-			.input span{
-				display: block;
-				float: right;
-				width:80px;
-				height:30px;
-				border:1px solid #333;
-				text-align: center;
-				line-height: 30px;
-			}
-			/*.input a{
-				display: block;
-				width:250px;
-				height:12px;
-				line-height: 12px;
-				font-size:12px;
-				color:darkred;
-				background: #eee;
-				margin-left:75px;
-			}*/
-			.input p{
-				width: 400px;
-				height:35px;
-				border:1px solid #666;
-				border-radius: 5px;
-				text-align: center;
-				line-height:35px;
-				margin-top:20px;
-				background: #b81e20;
-			}
 			.login-right{
 				width:300px;
 				height:100%;
@@ -161,14 +87,14 @@
 				box-shadow: 1px 1px 2px #eee;
 				margin-bottom: 20px;
 			}
-			.login-1 a{
+			.login-1 span{
 				width:150px;
 				float:right;
 				font-size:16px;
 				border-right:10px;
 				margin-bottom: 8px;
 			}
-			.login-1 span{
+			.login-1 a{
 				color:darkred;
 				font-size:18px;
 
@@ -258,8 +184,8 @@
 				width: 100px;
 				height:100px;
 			}
-			/*footer*/
-			.foot1{
+/*footer*/
+.foot1{
 	width: 1198px;
 	height:285px;
 	margin:0 auto;
@@ -401,25 +327,39 @@
 		<div class="login">
 			<div class="login-left">
 				<div class="imgs1">
-					<img src="img/33.jpg"/>
+					<img src="img/45.jpg"/>
 				</div>
 				<p>七七格互联网品牌</p>	
 			</div>
 			<div class="login-center">
-				<p class="tittle">注册新用户<a href="login.html">登录</a><span>已注册请</span></p>
-				<div class="input">
-					<form method="post" action="register.php">
-						<input type="text" placeholder="验证码" id="checkMa"/><a href=""id="name"></a>
-						<span id="checkma" style="opacity: 0;">&lt;&lt;点击</span><br/>
-						<input type="text" name="phone"placeholder="请输入手机号" id="phone"/><a href=""id="phone1"></a>
-						<!--<span >验证码</span><br/>-->
-						<input type="text" placeholder="真实姓名" name="userName"/><br/>
-						<input type="password"name="userPass" placeholder="设定登录密码" id="userPass"/><a href=""id="userPass1"></a><br/>
-						<input type="password" placeholder="再次输入密码" id="checkPass"/><a href=""id="checkPass1"></a><br/>
-						<input type="submit"value="立即注册"/>
-					</form>
+				<div class="login-1">
+					七七格登录<span>没有账户   免费   <a href="register.html">注册</a></span>
 				</div>
- 			</div>
+				<div class="click1">
+					<input type="button" value="普通登录"/>
+					<input type="button" value="快速登录"/>
+				</div>
+				<div class="login-2">
+					<input type="text" placeholder="请输入用户名" id="userId"/>&nbsp;<span id="userMsg"></span><br/>
+					<input type="password" placeholder="请输入密码" id="userPass"/>&nbsp;<span id="pass"></span> 
+					<div class="login-3">
+						<a href="">找回密码</a>
+						<input type="button" value="登录" id="btn"/> 
+					</div>
+					<div class="about1">
+						<p>使用合作网站账号登录七七</p>
+						<P>
+							<a href=""><img src="img/88.jpg"></a>
+							<a href=""><img src="img/89.jpg"></a>
+							<a href=""><img src="img/90.jpg"></a>
+							<a href=""><img src="img/91.jpg"></a>
+							<a href=""><img src="img/92.jpg"></a>
+							<a href=""><img src="img/93.jpg"></a>
+						</P>
+					</div>	
+				</div>
+				
+			</div>
 			<div class="login-right">
 				<a href="index.html">返回首页>></a>
 				<div class="show">
@@ -469,94 +409,49 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script>
 	$(function(){
-		$(".house").click(function(){
-			$(".bgpic")[0].style="background:url(img/star.gif)no-repeat;background-position:0px -27px;transition:all 0.5s;";
-		});
-		//页面打开的验证码
-		$("#checkMa").blur(function(){
-			var result=$("#checkMa")[0].value;
-		// 写正则
-			var checkma=$("#checkma")[0].innerHTML;
-		// 判断是否正确
-			if(result==checkma){
-				$("#name")[0].innerHTML="";
-				$("#name")[0].style.color="#000";
-			}else{
-				$("#name")[0].innerHTML="*";
-				$("#name")[0].style.color="red";
-			}
-		});
-		//手机号的验证
-//		if(){
-//			
-//		}
-		$("#phone").blur(function(){
-			var result=$("#phone")[0].value;
-		// 写正则
-			var reg=/^1[34578]\d{9}$/;
-		// 判断是否正确
-			if(reg.test(result)){
-				$("#phone1")[0].innerHTML="";
-				$("#phone1")[0].style.color="#000";
-			}else{
-				$("#phone1")[0].innerHTML="*";
-				$("#phone1")[0].style.color="red";
-			}
-		});//
-		//手机号码的
-		//密码设置
-		$("#userPass").blur(function(){
-			var result=$("#userPass")[0].value;
-		// 写正则
-			var reg=/^1\d{10}/;
-		// 判断是否正确
-			if(reg.test(result)){
-				$("#userPass1")[0].innerHTML="";
-				$("#userPass1")[0].style.color="#000";
-			}else{
-				$("#userPass1")[0].innerHTML="*";
-				$("#userPass1")[0].style.color="red";
-			}
-		});
+			$(".house").click(function(){
+				$(".bgpic")[0].style="background:url(img/star.gif)no-repeat;background-position:0px -27px;transition:all 0.5s;";
+			});
 		
-		//再次输入密码
-		$("#checkPass").blur(function(){
-			var result=$("#checkPass")[0].value;
-		// 写正则
-			var checkma=$("#userPass")[0].innerHTML;
-		// 判断是否正确
-			if(result==checkma){
-				$("#checkPass1")[0].innerHTML="";
-				$("#checkPass1")[0].style.color="#000";
-			}else{
-				$("#checkPass1")[0].innerHTML="*";
-				$("#checkPass1")[0].style.color="red";
-			}
-		});
-	})
-	
-
-	function show(){
-		var str="";
-		for(var i=0;i<3;i++){
-			var str1=parseInt(Math.random()*256);
-			if(str1<16){
-				str+="0";
-			}
-			str+=str1.toString(16);
-		}
-		document.getElementById("checkma").innerHTML=str;
-	}
-	document.getElementById("checkMa").onclick=function(){
-		show();
-		var span=document.getElementById("checkma");
-		span.style.opacity="1";
-		span.style.background="#E7E7E7";
-		span.style.color="orangered";
-		span.style.border="none";
-		span.style.transition="all 1s";
-	}
+			$("#btn").click(function(){
+				$.ajax({
+					type:"get",
+					url:"login.php",
+					async:true,
+					data:{
+						userId:$("#userId").val(),
+						userPass:$("#userPass").val()
+					},
+					success:function(data){
+						if(data=="0"){
+							//1、保存cookie
+							saveCookie("userId",$("#userId").val(),7);
+							//2、跳转到首页
+							location.href="index.html";
+						}else{
+							alert("亲，用户名或者密码错误！");
+						}
+					}
+				});
+			});
+			
+//			$("#userPass").blur(function(){
+//				var result=$("#userPass")[0].value;
+//			// 写正则
+//				var reg=/^1\d{10}/;
+//			// 判断是否正确
+//				if(reg.test(result)){
+//					$("#pass")[0].innerHTML="";
+//					$("#pass")[0].style.color="#000";
+//				}else{
+//					$("#pass")[0].innerHTML="*";
+//					$("#pass")[0].style.color="red";
+//				}
+//			});
+//			
+});
 </script>

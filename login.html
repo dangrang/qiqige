@@ -340,11 +340,11 @@
 					<input type="button" value="快速登录"/>
 				</div>
 				<div class="login-2">
-					<input type="text" placeholder="请输入用户名" id="userName"/>&nbsp;<span id="name"></span><br/>
+					<input type="text" placeholder="请输入用户名" id="userId"/>&nbsp;<span id="userMsg"></span><br/>
 					<input type="password" placeholder="请输入密码" id="userPass"/>&nbsp;<span id="pass"></span> 
 					<div class="login-3">
 						<a href="">找回密码</a>
-						<input type="submit" value="登录"/> 
+						<input type="button" value="登录" id="btn"/> 
 					</div>
 					<div class="about1">
 						<p>使用合作网站账号登录七七</p>
@@ -409,39 +409,36 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript" src="js/cookieTools.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script>
 	$(function(){
-		$(".house").click(function(){
-			$(".bgpic")[0].style="background:url(img/star.gif)no-repeat;background-position:0px -27px;transition:all 0.5s;";
+			$(".house").click(function(){
+				$(".bgpic")[0].style="background:url(img/star.gif)no-repeat;background-position:0px -27px;transition:all 0.5s;";
+			});
+		
+			$("#btn").click(function(){
+				$.ajax({
+					type:"post",
+					url:"login.php",
+					async:true,
+					data:{
+						userId:$("#userId").val(),
+						userPass:$("#userPass").val()
+					},
+					success:function(data){
+						console.log(data=="1");
+						if(data==1){
+							//1、保存cookie
+							//addCookie("userId",$("#userId").val(),7);
+							//2、跳转到首页
+							location.href="index.html";
+//							console.log("success");
+						}else{
+							alert("亲，用户名或者密码错误！");
+						}					
+					}
+				});
+			});
 		});
-	
-	$("#userName").blur(function(){
-		var result=$("#userName")[0].value;
-	// 写正则
-		var reg=/^1\d{10}/;
-	// 判断是否正确
-		if(reg.test(result)){
-			$("#name")[0].innerHTML="";
-			$("#name")[0].style.color="#000";
-		}else{
-			$("#name")[0].innerHTML="*";
-			$("#name")[0].style.color="red";
-		}
-	});
-	
-	$("#userPass").blur(function(){
-		var result=$("#userPass")[0].value;
-	// 写正则
-		var reg=/^1\d{10}/;
-	// 判断是否正确
-		if(reg.test(result)){
-			$("#pass")[0].innerHTML="";
-			$("#pass")[0].style.color="#000";
-		}else{
-			$("#pass")[0].innerHTML="*";
-			$("#pass")[0].style.color="red";
-		}
-	});
-})
 </script>
