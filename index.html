@@ -9,7 +9,7 @@
 <body>
 <!-- header -->
 	<div class="top">
-		<div class="top-center">
+		<div class="top-center" >
 			<div class="top-left">
 				<div class="box1-1">
 					<div class="box1-menu">
@@ -711,7 +711,7 @@
 		<div class="shoppic">
 			<div class="onepic">
 				<div class="zzc"></div>
-				<div class="img20">
+				<div class="img20" style="background: ;">
 					<a href=""></a>
 				</div>
 				<div class="content1">
@@ -935,14 +935,47 @@ $(function(){
 					}
 			});
 	//导航栏
-	$(".panel").click(function(){
-	    $(".flip").slideToggle("300");
-	});	
-	//顶部悬浮
-	 $(".float-bottom").click(function () {
-        $('body,html').animate({ scrollTop: 0 },500);
-        return false;
-    });
+		$(".panel").click(function(){
+		    $(".flip").slideToggle("300");
+		});	
+	//回到顶部
+		$(".float-bottom").click(function () {
+	        $('body,html').animate({ scrollTop: 0 },500);
+	        return false;
+	    });
+    //详情页
+    $("div").append("html");	
+    $("div").css.width:" 1200px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin:0 auto;"
 });
 
 </script>
+.shoppic{
+	width: 1200px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin:0 auto;
+	
+}
+<div class="shoppic">
+			<div class="onepic">
+				<div class="zzc"></div>
+				<div class="img7">
+					<a href="detail2.html"></a>
+				</div>
+				<div class="content1">
+					<a href="">七七格最新款上衣</a>
+					<a href="">售价:<span>298</span>元</a>
+					<a href="">充值购买相当于</a>
+				</div>
+				<div class="buyshop">
+					<a href="">￥158</a>
+					<a href="">立即购买</a>
+				</div>
+			</div>

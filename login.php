@@ -17,7 +17,7 @@
 	   	mysql_close($con);
 		
 		//数据库中查询出结果，表示登录成功。
-		$test = mysql_num_rows($result);
+//		$test = mysql_num_rows($result);
 		if(mysql_num_rows($result)==1){
 			echo "1";
 		}else{

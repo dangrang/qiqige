@@ -417,7 +417,7 @@
 				$(".bgpic")[0].style="background:url(img/star.gif)no-repeat;background-position:0px -27px;transition:all 0.5s;";
 			});
 		
-			$("#btn").click(function(){
+			$($("#btn")[i]).click(function(){
 				$.ajax({
 					type:"post",
 					url:"login.php",
@@ -427,7 +427,7 @@
 						userPass:$("#userPass").val()
 					},
 					success:function(data){
-						console.log(data=="1");
+//						console.log(data=="1");
 						if(data==1){
 							//1、保存cookie
 							//addCookie("userId",$("#userId").val(),7);

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<!--<script type="text/javascript" src="js/SliderPlugInjQuery.js" ></script>-->
+<script type="text/javascript">	
+		$(window).load(function(){
+			var shoppic=$("<div></div");
+				shoppic.css({
+			    	width:"1200px",
+					background: "#7E7E7E",
+					display: "flex",
+					justifyContent: "space-between",
+					flexWrap: "wrap",
+					margin:"0 auto"
+			    });
+			var onepic=$('<div></div>');       
+			    onepic.css({
+			    	width:"270px",
+					height:"415px",
+					background: "orange",
+					marginBottom:" 20px",
+					position: "relative"
+			    });
+			var zzc=$('<div></div>');       
+			    zzc.css({
+			    	width: "270px",
+					height:"300px",
+					background: "#000",
+					position: "absolute",
+					top:"0",
+					left:"0",
+					opacity: "0",
+			    });
+			var img=$('<div></div>');       
+			    img.css({
+			    	width: "270px",
+					height:"300px",
+					overflow: "hidden",
+			    });
+			var a1=$('<a></a>');       
+			    a1.css({
+			    	display: "block",
+					width: "95%",
+					height:"95%",
+					background: "url(img/31.jpg) no-repeat",
+					backgroundSize:"98% 98%",
+					marginLeft:"15px",
+			    });
+			var a2=$('<a></a>');       
+			    a2.css({
+			    	display: "block",
+					width: "95%",
+					height:"95%",
+					background: "url(img/31.jpg) no-repeat",
+					backgroundSize:"98% 98%",
+					marginLeft:"15px",
+			    });
+			   $(document.body).append(shoppic); 
+			   $(shoppic).append(onepic); 
+			   $(onepic).append(zzc); 
+			   $(onepic).append(img);
+			   $(img).append(a1);
+			   $(onepic).append(a2);
+			   
+		});
+//	var creatediv= function(){
+//	    var parentdiv=$('<div></div>');        //创建一个父div
+//	    parentdiv.attr('id','parent');        //给父div设置id
+//	    parentdiv.addclass('parentdiv') //添加css样式
+//	
+//	    var childdiv=$('<div></div>');        //创建一个子div
+//	    childdiv.attr('id','child');            //给子div设置id
+//	    childdiv.addclass('childdiv');    //添加css样式
+//	    
+//	    childdiv.appendto(parentdiv);        //将子div添加到父div中
+//	    parentdiv.appendto('body');            //将父div添加到body中
+//	}
+</script>
+<!--<div class="shoppic">
+			<div class="onepic">
+				<div class="zzc"></div>
+				<div class="img7">
+					<a href="detail2.html"></a>
+				</div>
+				<div class="content1">
+					<a href="">七七格最新款上衣</a>
+					<a href="">售价:<span>298</span>元</a>
+					<a href="">充值购买相当于</a>
+				</div>
+				<div class="buyshop">
+					<a href="">￥158</a>
+					<a href="">立即购买</a>
+				</div>
+			</div>-->
