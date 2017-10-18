@@ -245,6 +245,7 @@ a{
 	height:78px;
 	float:left;
 	list-style: none;
+	position: relative;
 }
 .bananer{
 		float: left;
@@ -271,15 +272,19 @@ a{
 	display: none;
 	width: 100px;
 	height:320px;
-	background:orange;
+	background:#eee;
 	text-align: center;
 	border-top:2px solid #b61a25;
-	
+	position: absolute;
+	z-index: 999;
+	opacity: .8;
+	border-radius: 10px;
 
 }
 .flip a{
 	display:block;
 	height:30px;
+	color:#0D010D;
 	
 }
 .line2{

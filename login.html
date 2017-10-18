@@ -417,10 +417,10 @@
 				$(".bgpic")[0].style="background:url(img/star.gif)no-repeat;background-position:0px -27px;transition:all 0.5s;";
 			});
 		
-			$($("#btn")[i]).click(function(){
+			$("#btn").click(function(){
 				$.ajax({
 					type:"post",
-					url:"login.php",
+					url:"php/login.php",
 					async:true,
 					data:{
 						userId:$("#userId").val(),
@@ -430,7 +430,7 @@
 //						console.log(data=="1");
 						if(data==1){
 							//1、保存cookie
-							//addCookie("userId",$("#userId").val(),7);
+							addCookie("userId",$("#userId").val(),7);
 							//2、跳转到首页
 							location.href="index.html";
 //							console.log("success");

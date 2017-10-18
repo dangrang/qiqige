@@ -114,7 +114,7 @@
 .img5{
 	width:100%;
 	height:360px;
-	background: url(../img/53.jpg) no-repeat;
+	/*background: url(../img/53.jpg) no-repeat;*/
 }
 .show{
 	width: 220px;
@@ -148,7 +148,7 @@
 .search{
 	width: 1200px;
 	height:89px;
-	background: url(../img/65.jpg) no-repeat;
+	/*background: url(../img/65.jpg) no-repeat;*/
 	background-size:100% 100%;
 	margin:0 auto;
 }
@@ -193,16 +193,16 @@
 	margin-bottom: 20px;
 	position: relative;
 }
-.img7{
+.img{
 	width: 270px;
 	height:300px;
 	overflow: hidden;
 }
-.img7 a{
+.img a{
 	display: block;
 	width: 95%;
 	height:95%;
-	background: url(../img/31.jpg) no-repeat;
+	/*background: url(../img/31.jpg) no-repeat;*/
 	background-size:98% 98%;
 	margin-left:15px;
 }
@@ -216,11 +216,11 @@
 	left:0;
 	opacity: 0;
 }
-.onepic:hover .img7 a{
+.onepic:hover .img a{
 	width: 99%;
 	height:99%;
 	transition: all 0.2s;
-	background: url(../img/31.jpg) no-repeat;
+	/*background: url(../img/31.jpg) no-repeat;*/
 	background-size:100% 100%;
 }
 .onepic:hover .zzc{
@@ -275,396 +275,7 @@
 	font-size:16px;
 	border-radius: 3px;
 }
-.img8{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img8 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/32.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img8 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/32.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img9{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img9 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/33.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img9 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/33.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img10{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img10 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/34.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img10 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/34.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img11{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img11 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/35.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img11 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/35.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img12{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img12 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/36.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img12 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/36.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img13{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img13 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/37.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img13 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/37.jpg) no-repeat;
-	background-size:100% 100%;
-}.img14{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img14 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/38.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img14 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/38.jpg) no-repeat;
-	background-size:100% 100%;
-}.img15{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img15 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/39.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img15 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/39.jpg) no-repeat;
-	background-size:100% 100%;
-}.img16{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img16 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/40.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img16 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/40.jpg) no-repeat;
-	background-size:100% 100%;
-}.img17{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img17 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/41.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img17 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/41.jpg) no-repeat;
-	background-size:100% 100%;
-}.img18{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img18 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/42.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img18 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/42.jpg) no-repeat;
-	background-size:100% 100%;
-}.img19{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img19 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/43.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img19 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/43.jpg) no-repeat;
-	background-size:100% 100%;
-}.img20{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img20 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/44.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img20 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/44.jpg) no-repeat;
-	background-size:100% 100%;
-}.img21{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img21 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/45.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img21 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/45.jpg) no-repeat;
-	background-size:100% 100%;
-}.img22{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img22 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/46.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img22 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/46.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img23{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img23 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/47.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img23 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/47.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img24{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img24 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/48.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img24 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/48.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img25{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img25 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/49.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img25 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/49.jpg) no-repeat;
-	background-size:100% 100%;
-}
-.img26{
-	width: 270px;
-	height:300px;
-	overflow: hidden;
-}
-.img26 a{
-	display: block;
-	width: 95%;
-	height:95%;
-	background: url(../img/50.jpg) no-repeat;
-	background-size:98% 98%;
-	margin-left:15px;
-}
-.onepic:hover .img26 a{
-	width: 99%;
-	height:99%;
-	box-shadow: 2px 2px 2px #eee;
-	transition: all 0.2s;
-	background: url(../img/50.jpg) no-repeat;
-	background-size:100% 100%;
-}
+
 .img27{
 	width: 270px;
 	height:300px;

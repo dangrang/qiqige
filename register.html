@@ -408,7 +408,7 @@
 			<div class="login-center">
 				<p class="tittle">注册新用户<a href="login.html">登录</a><span>已注册请</span></p>
 				<div class="input">
-					<form method="post" action="register.php">
+					<form method="post" action="php/register.php">
 						<input type="text" placeholder="验证码" id="checkMa"/><a href=""id="name"></a>
 						<span id="checkma" style="opacity: 0;">&lt;&lt;点击</span><br/>
 						<input type="text" name="phone"placeholder="请输入手机号" id="phone"/><a href=""id="phone1"></a>
@@ -540,22 +540,25 @@
 		$("#btn").click(function(){
 				$.ajax({
 					type:"post",
-					url:"register.php",
+					url:"php/register.php",
 					async:true,
 					data:{
 						userId:$("#phone").val(),
-						userPass:$("#userPass").val()
+						userPass:$("#userPass").val(),
+						userName:$("#userName").val()
 					},
+					
 					success:function(data){
-//						console.log(data=="1");
+//					console.log(data==1);	
 						if(data==1){
 							//1、保存cookie
 							//addCookie("userId",$("#userId").val(),7);
 							//2、跳转到首页
-							location.href="login.html";
+							alert("用户名已注册");
 //							console.log("success");
 					}else{
-							alert("用户名已注册");
+							
+							location.href="login.html";
 						}					
 					}
 				});
